@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color:#ccc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .painting {
+            text-align: center;
+        }
+
+        .painting img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .painting h2 {
+            margin-top: 10px;
+        }
+
+        .painting p {
+            font-size: 18px;
+        }
+
+        .price {
+            color: #e44d26;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        button#add-to-cart {
+            background-color: #e42698;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button#add-to-cart:hover {
+            background-color: #c518a0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Product</h1>
+    </header>
+
+    <main>
+        <div class="painting">
+            <img src="img/d4.jpg" alt="Painting Title">
+            <h2>Painting Title</h2>
+            <p>Artist: Priyanshi Bhatnagar</p>
+            <p>Description: a girl who is suffering alone.</p>
+            <p class="price">Price: $200</p>
+            <button id="add-to-cart">Add to Cart</button>
+        </div>
+    </main>
+</body>
+</html>
