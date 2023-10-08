@@ -1,25 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+  <title>Login Page</title>
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Login</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel=" icon" href="img/painting1.png" >
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+      </style>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
 </head>
+
 <body>
-    <div class="login-container">
-        <h1>Customer Login</h1>
-        <form action="login.php" method="POST">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form class="login-form" onsubmit="return validatePasswordAndRedirect()">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Login">
+      <div class="password-requirements" id="passwordRequirements" style="display:none;">
+        Password must contain:
+        <ul>
+          <li>At least 8 characters</li>
+          <li>At least 1 uppercase letter</li>
+          <li>At least 1 lowercase letter</li>
+          <li>At least 1 digit</li>
+          <li>At least 1 special character</li>
+        </ul>
+      </div>
+    </form>
+    <a href="#" class="sign-up-button" onclick="showSignup()">Sign Up</a>
+  </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="signup.css">Sign up here</a></p>
+  <!-- The sign-up form pop-up/modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideSignup()">&times;</span>
+      <h2>Sign Up</h2>
+      <form class="login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="password" required>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <input type="submit" value="Sign Up">
+      </form>
     </div>
-</body>
-</html>
+  </div>
 
+  <script src="js/singnup.js"> </script>
+</body>
+
+</html>

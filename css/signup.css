@@ -1,0 +1,124 @@
+body {
+    background-image: url('../img/painting1.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .login-container {
+    background-image: linear-gradient(rgba(219, 143, 113, 0.329), rgba(48, 40, 45, 0.418)), url('../img/d1\ \(2\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #F6DDD3ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-container h1 {
+    text-align: center;
+    color: rgb(27, 25, 25);
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-form label {
+    color:#000000; 
+  }
+
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .login-form input[type="submit"] {
+    background-color: #6090FFff;
+    color: #F6DDD3ff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-form input[type="submit"]:hover {
+    background-color: #F1F3F1ff;
+  }
+
+  /* Sign-up button */
+  .sign-up-button {
+    background-color: rgb(27, 25, 25);
+    color: #F6DDD3ff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .sign-up-button:hover {
+    background-color: #d0201a;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F6DDD3ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(27, 25, 25);
+  }
+
+  .modal-content h2 {
+    text-align: center;
+    color: rgb(27, 25, 25);
+  }
+
+  /* Password requirements */
+  .password-requirements {
+    color: rgb(27, 25, 25);
+    margin-top: 10px;
+  }
