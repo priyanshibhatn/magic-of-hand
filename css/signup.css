@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/painting1.png'); 
+    /* background-image: url('../img/painting1.png');  */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -97,7 +97,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #F6DDD3ff;
+    background-image: linear-gradient(rgba(219, 143, 113, 0.329), rgba(48, 40, 45, 0.418)), url('../img/d1\ \(2\).jpg');
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
